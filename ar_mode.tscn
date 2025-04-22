@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cjjyv3b1qyrli"]
+[gd_scene load_steps=10 format=3 uid="uid://cjjyv3b1qyrli"]
 
 [ext_resource type="Texture2D" uid="uid://iwpp8reegaan" path="res://Screenshot 2025-03-13 110926 1.png" id="1_0egvk"]
 [ext_resource type="Script" uid="uid://8hbq2ggttm6f" path="res://ar_mode.gd" id="1_fk8jq"]
 [ext_resource type="Texture2D" uid="uid://j5vsckbhf06g" path="res://lock_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 1.png" id="2_nvan6"]
 [ext_resource type="Texture2D" uid="uid://ck5gjge25jyeg" path="res://keyboard_backspace_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 2.png" id="3_8n8gn"]
+[ext_resource type="FontFile" uid="uid://bi7c83uaio205" path="res://JejuHallasan-Regular.ttf" id="3_rbug7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_41x2b"]
 bg_color = Color(0.85098, 0.85098, 0.85098, 1)
@@ -44,8 +45,8 @@ script = ExtResource("1_fk8jq")
 
 [node name="Screenshot2025-03-131109261" type="Sprite2D" parent="."]
 modulate = Color(0.517184, 0.517184, 0.517184, 1)
-position = Vector2(576, 324)
-scale = Vector2(1.36493, 1.66154)
+position = Vector2(960, 540)
+scale = Vector2(2.27488, 2.76923)
 texture = ExtResource("1_0egvk")
 
 [node name="Label" type="Label" parent="."]
@@ -53,20 +54,23 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -20.0
-offset_top = 91.0
-offset_right = 20.0
-offset_bottom = 133.0
+offset_left = -70.0
+offset_top = 130.0
+offset_right = -30.0
+offset_bottom = 172.0
 grow_horizontal = 2
+scale = Vector2(3.295, 3.295)
+theme_override_fonts/font = ExtResource("3_rbug7")
 theme_override_font_sizes/font_size = 30
 text = "AR"
 
 [node name="AR 1" type="Button" parent="."]
 layout_mode = 2
-offset_left = 334.0
-offset_top = 234.0
-offset_right = 454.0
-offset_bottom = 414.0
+offset_left = 345.0
+offset_top = 390.0
+offset_right = 465.0
+offset_bottom = 570.0
+scale = Vector2(2.25, 2.25)
 theme_override_icons/icon = ExtResource("2_nvan6")
 theme_override_styles/normal = SubResource("StyleBoxFlat_41x2b")
 icon_alignment = 1
@@ -78,33 +82,35 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -60.0
-offset_top = -90.0
-offset_right = 60.0
-offset_bottom = 90.0
+offset_left = -129.0
+offset_top = -150.0
+offset_right = -9.0
+offset_bottom = 30.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(2.25, 2.25)
 theme_override_icons/icon = ExtResource("2_nvan6")
 theme_override_styles/normal = SubResource("StyleBoxFlat_lkk31")
 icon_alignment = 1
 
 [node name="AR 3" type="Button" parent="."]
 layout_mode = 2
-offset_left = 704.0
-offset_top = 234.0
-offset_right = 824.0
-offset_bottom = 414.0
+offset_left = 1335.0
+offset_top = 390.0
+offset_right = 1455.0
+offset_bottom = 570.0
+scale = Vector2(2.25, 2.25)
 theme_override_icons/icon = ExtResource("2_nvan6")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ymxa6")
 icon_alignment = 1
 
 [node name="back" type="Button" parent="."]
 layout_mode = 0
-offset_left = 87.0
-offset_top = 91.0
-offset_right = 146.0
-offset_bottom = 149.0
-scale = Vector2(1.2, 1.2)
+offset_left = 64.0005
+offset_top = 60.0003
+offset_right = 123.0
+offset_bottom = 118.0
+scale = Vector2(2.165, 2.165)
 theme_override_icons/icon = ExtResource("3_8n8gn")
 theme_override_styles/normal = SubResource("StyleBoxFlat_fk8jq")
 icon_alignment = 1
