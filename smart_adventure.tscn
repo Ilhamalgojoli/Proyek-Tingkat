@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0021p5jbptrv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7eq4f"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Smart adventure" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+sprite_frames = SubResource("SpriteFrames_7eq4f")
+animation = &"run"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player/AnimatedSprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]

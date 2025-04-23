@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=3 uid="uid://ba44b81e0vf8m"]
+
+[ext_resource type="Script" uid="uid://naheubkogf0" path="res://main_menu.gd" id="1_eiy7p"]
+[ext_resource type="Texture2D" uid="uid://iwpp8reegaan" path="res://Screenshot 2025-03-13 110926 1.png" id="1_i26rj"]
+[ext_resource type="FontFile" uid="uid://bi7c83uaio205" path="res://JejuHallasan-Regular.ttf" id="3_h7a2f"]
+[ext_resource type="FontFile" uid="uid://6gaovr1lqc67" path="res://Katibeh-Regular.ttf" id="4_qoqlk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eiy7p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qoqlk"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eiy7p")
+
+[node name="Screenshot2025-03-131109261" type="Sprite2D" parent="."]
+modulate = Color(0.877616, 0.877616, 0.877616, 1)
+position = Vector2(961, 540)
+scale = Vector2(2.27251, 2.76923)
+texture = ExtResource("1_i26rj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -883.0
+offset_top = 68.0
+offset_right = -708.0
+offset_bottom = 193.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.625, 2.625)
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_h7a2f")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_eiy7p")
+text = "Start Game"
+alignment = 0
+
+[node name="Option" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_h7a2f")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qoqlk")
+text = "Option"
+alignment = 0
+
+[node name="ExitGame" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_h7a2f")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qoqlk")
+text = "Exit Game"
+alignment = 0
+
+[node name="SMART" type="Label" parent="."]
+offset_left = 743.0
+offset_top = 172.0
+offset_right = 1158.0
+offset_bottom = 353.0
+theme_override_fonts/font = ExtResource("4_qoqlk")
+theme_override_font_sizes/font_size = 180
+text = "SMART"
+horizontal_alignment = 1
+
+[node name="ADVENTURE" type="Label" parent="."]
+offset_left = 585.0
+offset_top = 302.0
+offset_right = 1317.0
+offset_bottom = 483.0
+theme_override_fonts/font = ExtResource("4_qoqlk")
+theme_override_font_sizes/font_size = 180
+text = "ADVENTURE"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Option" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitGame" to="." method="_on_exit_game_pressed"]
