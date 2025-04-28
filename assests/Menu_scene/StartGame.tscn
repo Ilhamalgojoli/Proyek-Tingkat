@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=3 uid="uid://dwrsq1r43ynl0"]
+
+[ext_resource type="Script" uid="uid://bnaw3c4isnrq4" path="res://assests/Script/start_game.gd" id="1_4m0oe"]
+[ext_resource type="Texture2D" uid="uid://iwpp8reegaan" path="res://assests/Img/Screenshot 2025-03-13 110926 1.png" id="2_ttpwo"]
+[ext_resource type="FontFile" uid="uid://6gaovr1lqc67" path="res://assests/Font/Katibeh-Regular.ttf" id="3_2alka"]
+[ext_resource type="FontFile" uid="uid://bi7c83uaio205" path="res://assests/Font/JejuHallasan-Regular.ttf" id="4_v3wwk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yv8gd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2volw"]
+
+[node name="StartGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4m0oe")
+
+[node name="Screenshot2025-03-131109261" type="Sprite2D" parent="."]
+modulate = Color(0.686275, 0.686275, 0.686275, 1)
+position = Vector2(960, 540)
+scale = Vector2(2.27488, 2.76923)
+texture = ExtResource("2_ttpwo")
+
+[node name="SMART" type="Label" parent="."]
+layout_mode = 2
+offset_left = 743.0
+offset_top = 172.0
+offset_right = 1158.0
+offset_bottom = 353.0
+theme_override_fonts/font = ExtResource("3_2alka")
+theme_override_font_sizes/font_size = 180
+text = "SMART"
+horizontal_alignment = 1
+
+[node name="ADVENTURE" type="Label" parent="."]
+layout_mode = 2
+offset_left = 585.0
+offset_top = 302.0
+offset_right = 1317.0
+offset_bottom = 483.0
+theme_override_fonts/font = ExtResource("3_2alka")
+theme_override_font_sizes/font_size = 180
+text = "ADVENTURE"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = 100.0
+offset_right = -38.9999
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.175, 2.175)
+
+[node name="Start Play Game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_v3wwk")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yv8gd")
+text = "Play Game
+"
+
+[node name="AR" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_v3wwk")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yv8gd")
+text = "AR
+"
+
+[node name="Back To Menu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_v3wwk")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2volw")
+text = "Back To Menu
+"
+
+[connection signal="pressed" from="VBoxContainer/Start Play Game" to="." method="_on_start_play_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/AR" to="." method="_on_ar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Back To Menu" to="." method="_on_back_to_menu_pressed"]

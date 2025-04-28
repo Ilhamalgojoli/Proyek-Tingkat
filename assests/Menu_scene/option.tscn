@@ -1,0 +1,97 @@
+[gd_scene load_steps=7 format=3 uid="uid://skjp570182hy"]
+
+[ext_resource type="Script" uid="uid://cos2dulrid7qg" path="res://assests/Script/option.gd" id="1_6gduy"]
+[ext_resource type="Texture2D" uid="uid://iwpp8reegaan" path="res://assests/Img/Screenshot 2025-03-13 110926 1.png" id="2_w68dr"]
+[ext_resource type="FontFile" uid="uid://bi7c83uaio205" path="res://assests/Font/JejuHallasan-Regular.ttf" id="3_cfcxf"]
+[ext_resource type="Texture2D" uid="uid://ck5gjge25jyeg" path="res://assests/Img/keyboard_backspace_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 2.png" id="4_it5gh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6ia3"]
+bg_color = Color(0.878431, 0.694118, 0.537255, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="GDScript" id="GDScript_slay5"]
+script/source = "extends Button
+"
+
+[node name="Option" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6gduy")
+
+[node name="Screenshot2025-03-131109261" type="Sprite2D" parent="."]
+modulate = Color(0.687215, 0.687215, 0.687215, 1)
+position = Vector2(960, 540)
+scale = Vector2(2.27488, 2.76923)
+texture = ExtResource("2_w68dr")
+
+[node name="Option" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -194.0
+offset_top = 159.0
+offset_right = 113.0
+offset_bottom = 257.0
+grow_horizontal = 2
+scale = Vector2(1.24, 1.24)
+theme_override_fonts/font = ExtResource("3_cfcxf")
+theme_override_font_sizes/font_size = 96
+text = "Option"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -384.0
+offset_top = -105.0
+offset_right = 4.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.99, 1.99)
+
+[node name="Music" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_cfcxf")
+theme_override_font_sizes/font_size = 35
+text = "Music"
+
+[node name="HSlider(Music)" type="HSlider" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="SFX" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_cfcxf")
+theme_override_font_sizes/font_size = 35
+text = "SFX"
+
+[node name="HSlider2(SFX)" type="HSlider" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 44.0
+offset_right = 124.0
+offset_bottom = 102.0
+scale = Vector2(2, 2)
+theme_override_icons/icon = ExtResource("4_it5gh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_c6ia3")
+icon_alignment = 1
+script = SubResource("GDScript_slay5")
+
+[connection signal="value_changed" from="VBoxContainer/HSlider(Music)" to="." method="_on_h_slider_music_value_changed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
