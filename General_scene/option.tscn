@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://skjp570182hy"]
 
-[ext_resource type="Script" uid="uid://cos2dulrid7qg" path="res://assests/Script/option.gd" id="1_6gduy"]
-[ext_resource type="Texture2D" uid="uid://iwpp8reegaan" path="res://assests/Img/Screenshot 2025-03-13 110926 1.png" id="2_w68dr"]
-[ext_resource type="FontFile" uid="uid://bi7c83uaio205" path="res://assests/Font/JejuHallasan-Regular.ttf" id="3_cfcxf"]
-[ext_resource type="Texture2D" uid="uid://ck5gjge25jyeg" path="res://assests/Img/keyboard_backspace_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 2.png" id="4_it5gh"]
+[ext_resource type="Script" uid="uid://cos2dulrid7qg" path="res://Script/option.gd" id="1_hisky"]
+[ext_resource type="Texture2D" uid="uid://iwpp8reegaan" path="res://assests/Img/Screenshot 2025-03-13 110926 1.png" id="2_xejwd"]
+[ext_resource type="FontFile" uid="uid://bi7c83uaio205" path="res://assests/Font/JejuHallasan-Regular.ttf" id="3_mjcna"]
+[ext_resource type="Texture2D" uid="uid://ck5gjge25jyeg" path="res://assests/Img/keyboard_backspace_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 2.png" id="4_4x3ob"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6ia3"]
 bg_color = Color(0.878431, 0.694118, 0.537255, 1)
@@ -23,13 +23,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6gduy")
+script = ExtResource("1_hisky")
 
 [node name="Screenshot2025-03-131109261" type="Sprite2D" parent="."]
 modulate = Color(0.687215, 0.687215, 0.687215, 1)
 position = Vector2(960, 540)
 scale = Vector2(2.27488, 2.76923)
-texture = ExtResource("2_w68dr")
+texture = ExtResource("2_xejwd")
 
 [node name="Option" type="Label" parent="."]
 layout_mode = 1
@@ -42,7 +42,7 @@ offset_right = 113.0
 offset_bottom = 257.0
 grow_horizontal = 2
 scale = Vector2(1.24, 1.24)
-theme_override_fonts/font = ExtResource("3_cfcxf")
+theme_override_fonts/font = ExtResource("3_mjcna")
 theme_override_font_sizes/font_size = 96
 text = "Option"
 
@@ -64,7 +64,7 @@ scale = Vector2(1.99, 1.99)
 [node name="Music" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("3_cfcxf")
+theme_override_fonts/font = ExtResource("3_mjcna")
 theme_override_font_sizes/font_size = 35
 text = "Music"
 
@@ -74,7 +74,7 @@ layout_mode = 2
 [node name="SFX" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("3_cfcxf")
+theme_override_fonts/font = ExtResource("3_mjcna")
 theme_override_font_sizes/font_size = 35
 text = "SFX"
 
@@ -88,7 +88,7 @@ offset_top = 44.0
 offset_right = 124.0
 offset_bottom = 102.0
 scale = Vector2(2, 2)
-theme_override_icons/icon = ExtResource("4_it5gh")
+theme_override_icons/icon = ExtResource("4_4x3ob")
 theme_override_styles/normal = SubResource("StyleBoxFlat_c6ia3")
 icon_alignment = 1
 script = SubResource("GDScript_slay5")

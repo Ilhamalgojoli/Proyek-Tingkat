@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://cjjyv3b1qyrli"]
 
-[ext_resource type="Script" uid="uid://8hbq2ggttm6f" path="res://assests/Script/ar_mode.gd" id="1_j78tg"]
-[ext_resource type="Texture2D" uid="uid://iwpp8reegaan" path="res://assests/Img/Screenshot 2025-03-13 110926 1.png" id="2_mqtfx"]
-[ext_resource type="FontFile" uid="uid://bi7c83uaio205" path="res://assests/Font/JejuHallasan-Regular.ttf" id="3_10mdl"]
-[ext_resource type="Texture2D" uid="uid://j5vsckbhf06g" path="res://assests/Img/lock_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 1.png" id="4_kwgs6"]
-[ext_resource type="Texture2D" uid="uid://ck5gjge25jyeg" path="res://assests/Img/keyboard_backspace_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 2.png" id="5_66epy"]
+[ext_resource type="Script" uid="uid://8hbq2ggttm6f" path="res://Script/ar_mode.gd" id="1_yxa4f"]
+[ext_resource type="Texture2D" uid="uid://iwpp8reegaan" path="res://assests/Img/Screenshot 2025-03-13 110926 1.png" id="2_q3iql"]
+[ext_resource type="FontFile" uid="uid://bi7c83uaio205" path="res://assests/Font/JejuHallasan-Regular.ttf" id="3_pdfyp"]
+[ext_resource type="Texture2D" uid="uid://j5vsckbhf06g" path="res://assests/Img/lock_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 1.png" id="4_60g1e"]
+[ext_resource type="Texture2D" uid="uid://ck5gjge25jyeg" path="res://assests/Img/keyboard_backspace_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 2.png" id="5_v5le2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_41x2b"]
 bg_color = Color(0.85098, 0.85098, 0.85098, 1)
@@ -41,13 +41,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_j78tg")
+script = ExtResource("1_yxa4f")
 
 [node name="Screenshot2025-03-131109261" type="Sprite2D" parent="."]
 modulate = Color(0.517184, 0.517184, 0.517184, 1)
 position = Vector2(960, 540)
 scale = Vector2(2.27488, 2.76923)
-texture = ExtResource("2_mqtfx")
+texture = ExtResource("2_q3iql")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -60,7 +60,7 @@ offset_right = -30.0
 offset_bottom = 172.0
 grow_horizontal = 2
 scale = Vector2(3.295, 3.295)
-theme_override_fonts/font = ExtResource("3_10mdl")
+theme_override_fonts/font = ExtResource("3_pdfyp")
 theme_override_font_sizes/font_size = 30
 text = "AR"
 
@@ -71,7 +71,7 @@ offset_top = 390.0
 offset_right = 465.0
 offset_bottom = 570.0
 scale = Vector2(2.25, 2.25)
-theme_override_icons/icon = ExtResource("4_kwgs6")
+theme_override_icons/icon = ExtResource("4_60g1e")
 theme_override_styles/normal = SubResource("StyleBoxFlat_41x2b")
 icon_alignment = 1
 
@@ -89,7 +89,7 @@ offset_bottom = 30.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.25, 2.25)
-theme_override_icons/icon = ExtResource("4_kwgs6")
+theme_override_icons/icon = ExtResource("4_60g1e")
 theme_override_styles/normal = SubResource("StyleBoxFlat_lkk31")
 icon_alignment = 1
 
@@ -100,7 +100,7 @@ offset_top = 390.0
 offset_right = 1455.0
 offset_bottom = 570.0
 scale = Vector2(2.25, 2.25)
-theme_override_icons/icon = ExtResource("4_kwgs6")
+theme_override_icons/icon = ExtResource("4_60g1e")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ymxa6")
 icon_alignment = 1
 
@@ -111,7 +111,7 @@ offset_top = 60.0003
 offset_right = 123.0
 offset_bottom = 118.0
 scale = Vector2(2.165, 2.165)
-theme_override_icons/icon = ExtResource("5_66epy")
+theme_override_icons/icon = ExtResource("5_v5le2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_fk8jq")
 icon_alignment = 1
 

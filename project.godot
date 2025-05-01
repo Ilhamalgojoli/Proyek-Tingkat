@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Project Tingkat"
-run/main_scene="uid://ba44b81e0vf8m"
+run/main_scene="uid://d0021p5jbptrv"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Controller="*res://Script/controller.gd"
 
 [display]
 
